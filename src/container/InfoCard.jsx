@@ -1,17 +1,14 @@
-import Card1 from "@/components/Card1.jsx";
-import Card2 from "@/components/Card2.jsx";
-import Card3 from "@/components/Card3.jsx";
-import Card4 from "@/components/Card4.jsx";
-import {SimpleGrid} from "@chakra-ui/react";
+import {Flex} from "@chakra-ui/react";
+import SingleCard from "@/components/SingleCard.jsx";
+import infos from "@/data/Infos.jsx";
 const InfoCard = () => {
     return (
-    <SimpleGrid /*spacing={4} templateColumns='repeat(auto-fill, 500px)'*/>
-        <Card1/>
-        <Card2/>
-        <Card3/>
-        <Card4/>
-    </SimpleGrid>
-)
+        <Flex flexWrap="wrap" justifyContent="space-evenly" gap="50px">
+            {infos.map((info, idx) => (
+                <SingleCard key={idx} info={info}/>
+            ))}
+        </Flex>
+    )
 }
 
 export default InfoCard

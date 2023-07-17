@@ -1,15 +1,14 @@
-import Announcement1 from "@/components/Announcement1.jsx";
-import Announcement2 from "@/components/Announcement2.jsx";
-import Announcement3 from "@/components/Announcement3.jsx";
-import {SimpleGrid} from "@chakra-ui/react";
-const Announement = () => {
+import {Flex} from "@chakra-ui/react";
+import SingleAnnouncement from "@/components/SingleAnnouncement";
+import announcements from "@/data/Announcements";
+const Announcement = () => {
     return (
-        <SimpleGrid /*spacing={4} templateColumns='repeat(auto-fill, 500px)'*/>
-            <Announcement1/>
-            <Announcement2/>
-            <Announcement3/>
-        </SimpleGrid>
+        <Flex flexwrap="wrap" flexDir="column">
+            {announcements.map((info, idx) => (
+                <SingleAnnouncement key={idx} info={info}/>
+            ))}
+        </Flex>
     )
 }
 
-export default Announement
+export default Announcement

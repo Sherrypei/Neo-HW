@@ -6,12 +6,13 @@ import Note1 from "@/components/Note1.jsx";
 import Note2 from "@/components/Note2.jsx";
 import Footer from "@/components/Footer.jsx";
 import {Form} from "@chakra-ui/theme/components";
+import SingleAnnouncement from "@/components/SingleAnnouncement.jsx";
 
 
 
 const HomePage = () =>{
     return (
-        <Flex w="100vw" flexDir={"column"}>
+        <Flex w="100vw" flexDir={"column"} alignItems="center">
             <Header/>
             <Announcement/>
             <Note1/>

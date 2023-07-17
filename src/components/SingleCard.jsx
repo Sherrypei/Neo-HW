@@ -3,7 +3,7 @@ import {Card, CardBody, Stack, Text, Flex, CardHeader, CardFooter} from "@chakra
 const SingleCard = ({info}) => {
     const {zhTitle, enTitle, zhName, enName, zhUnit, enUnit, email, phone} = info;
     return (
-        <Stack>
+        <Stack w="35%" >
             <Text align="center" fontSize="14px">
                 {zhTitle}
             </Text>
@@ -13,11 +13,15 @@ const SingleCard = ({info}) => {
             <Card>
                 <CardHeader>
                     <Text fontSize="18px">{zhName}</Text>
+
                     <Text fontSize="14px">{enName}</Text>
                 </CardHeader>
                 <CardBody>
-                    <Text align={"right"} fontSize="16.8px">{zhUnit}
-                        {enUnit}</Text>
+                    <Text align={"right"} fontSize="16.8px" color="#808080">{zhUnit}
+                        </Text>
+                    <Text align={"right"} fontSize="16.8px" color="#808080">
+                        {enUnit}
+                    </Text>
                 </CardBody>
                 <CardFooter>
                     <Text fontSize="12px" color="#733236">{email}</Text>
