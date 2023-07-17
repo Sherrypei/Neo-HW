@@ -1,4 +1,4 @@
-import {Card, CardBody, Stack, Text, Flex} from "@chakra-ui/react";
+import {Card, CardBody, Stack, Text, Flex, CardHeader, CardFooter} from "@chakra-ui/react";
 
 
 const Card2 = () => {
@@ -11,19 +11,18 @@ const Card2 = () => {
                 For Oversea Chinese Students
             </Text>
             <Card>
+                <CardHeader>
+                    <Text fontSize="18px">陳思瑋 組員<br/></Text>
+                    <Text fontSize="14px">Mr. Chen Sih-Wei</Text>
+                </CardHeader>
                 <CardBody>
-                    <div>
-                        <Text fontSize="18px">陳思瑋 組員<br/></Text>
-                        <Text fontSize="14px">Mr. Chen Sih-Wei</Text>
-                    </div>
                     <Text align={"right"} fontSize="16.8px">僑生及陸生輔導組<br/>
                         Overseas Student Advising Division</Text>
-                    <div>
-                        <Text fontSize="12px">chensihwei@ntu.edu.tw<br/></Text>
-                        <Text fontSize="12px">(02) 3366-3232 ext 15</Text>
-                    </div>
-
                 </CardBody>
+                <CardFooter>
+                    <Text fontSize="12px">chensihwei@ntu.edu.tw<br/></Text>
+                    <Text fontSize="12px">(02) 3366-3232 ext 15</Text>
+                </CardFooter>
             </Card>
         </Stack>
 
