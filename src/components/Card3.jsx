@@ -12,15 +12,15 @@ const Card3 = () => {
             <Card>
                 <CardBody>
                     <div>
-                        <Text>張怡茵 助教<br/></Text>
-                        <Text>Ms. Chang Yi-Ying</Text>
+                        <Text fontSize="18px">張怡茵 助教<br/></Text>
+                        <Text fontSize="14px">Ms. Chang Yi-Ying</Text>
                     </div>
 
-                    <Text align={"right"}>中文系<br/>
+                    <Text align={"right"} fontSize="16.8px">中文系<br/>
                         Department of Chinese Literature</Text>
                     <div>
-                        <Text>yiyin747@ntu.edu.tw<br/></Text>
-                        <Text>(02) 3366-4005<br/></Text>
+                        <Text fontSize="12px">yiyin747@ntu.edu.tw<br/></Text>
+                        <Text fontSize="12px">(02) 3366-4005<br/></Text>
                     </div>
 
                 </CardBody>

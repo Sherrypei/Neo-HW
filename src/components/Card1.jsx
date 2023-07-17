@@ -13,14 +13,14 @@ const Card2 = () => {
             <Card>
                 <CardBody>
                     <div>
-                        <Text>徐慧玲 專員<br/></Text>
-                        <Text>Ms. Lily Hsu</Text>
+                        <Text fontSize="18px">徐慧玲 專員<br/></Text>
+                        <Text fontSize="14px">Ms. Lily Hsu</Text>
                     </div>
-                    <Text align={"right"}>國際事務處<br/>
+                    <Text align={"right"} fontSize="16.8px">國際事務處<br/>
                         Office of International </Text>
                     <div>
-                        <Text>lilyhsup87@ntu.edu.tw<br/></Text>
-                        <Text>(02) 3366-2007 ext. 206</Text>
+                        <Text fontSize="12px">lilyhsup87@ntu.edu.tw<br/></Text>
+                        <Text fontSize="12px">(02) 3366-2007 ext. 206</Text>
                     </div>
 
                 </CardBody>

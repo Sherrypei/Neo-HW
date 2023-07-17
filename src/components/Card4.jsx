@@ -13,15 +13,15 @@ const Card4 = () => {
             <Card>
                 <CardBody>
                     <div>
-                        <Text>李欣平 & 陳亭吟 助教<br/></Text>
-                        <Text>Ms. Magen Lee & Ms. Cindy Chen</Text>
+                        <Text fontSize="18px">李欣平 & 陳亭吟 助教<br/></Text>
+                        <Text fontSize="14px">Ms. Magen Lee & Ms. Cindy Chen</Text>
 
                     </div>
-                    <Text align={"right"}>外文系<br/>
+                    <Text align={"right"} fontSize="16.8px">外文系<br/>
                         Department of Foreign Languages and Literatures</Text>
                     <div>
-                        <Text>cindychen@ntu.edu.tw<br/></Text>
-                        <Text>(02) 3366-3219<br/></Text>
+                        <Text fontSize="12px">cindychen@ntu.edu.tw<br/></Text>
+                        <Text fontSize="12px">(02) 3366-3219<br/></Text>
                     </div>
 
                 </CardBody>
