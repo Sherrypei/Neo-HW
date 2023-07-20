@@ -1,4 +1,4 @@
-import {Flex, VStack} from "@chakra-ui/react";
+import {Flex, useMediaQuery, VStack} from "@chakra-ui/react";
 import Header from "@/components/Header.jsx";
 import InfoCard from "@/container/InfoCard.jsx";
 import Announcement from "@/container/Announcement.jsx";
@@ -11,8 +11,11 @@ import SingleAnnouncement from "@/components/SingleAnnouncement.jsx";
 
 
 const HomePage = () =>{
+    const [isMobile] = useMediaQuery("(max-width: 768px)");
+
     return (
-        <Flex gap ="60px" flexDir="column">
+
+    <Flex gap ="60px" flexDir="column">
             <Header/>
             <Announcement/>
             <Note1/>

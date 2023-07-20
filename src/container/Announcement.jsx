@@ -3,14 +3,14 @@ import SingleAnnouncement from "@/components/SingleAnnouncement";
 import announcements from "@/data/Announcements";
 const Announcement = () => {
     return (
-            <Center>
-                <VStack spacing ="31px">
+            <Flex justifyContent="center">
+                <VStack gap="31px" alignItems="stretch">
                         {announcements.map((info, idx) => (
                             <SingleAnnouncement key={idx} info={info}/>
                         ))}
 
                 </VStack>
-            </Center>
+            </Flex>
     )
 }
 

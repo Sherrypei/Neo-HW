@@ -1,11 +1,13 @@
-import {Card, CardBody, Text,Flex} from "@chakra-ui/react";
+import {Card, CardBody, Text, Flex, useMediaQuery} from "@chakra-ui/react";
 import announcement from "@/data/Announcements.jsx";
 
 const SingleAnnouncement = ({info}) => {
     const {zhTitle, enTitle} = info;
+    const [isMobile] = useMediaQuery("(max-width: 768px)");
+
     return (
         <Flex  >
-                <Card  minW="55vw">
+                <Card w="100%">
                     <CardBody>
                         <Text align="center" fontSize="16px">{zhTitle}</Text>
                         <Text align="center" fontSize="12px">{enTitle}</Text>
