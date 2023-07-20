@@ -12,15 +12,14 @@ import SingleAnnouncement from "@/components/SingleAnnouncement.jsx";
 
 const HomePage = () =>{
     return (
-
-        <VStack spacing ="60px">
+        <Flex gap ="60px" flexDir="column">
             <Header/>
             <Announcement/>
             <Note1/>
             <InfoCard/>
             <Note2/>
             <Footer/>
-        </VStack>
+        </Flex>
 
     )
 }

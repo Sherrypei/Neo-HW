@@ -3,12 +3,11 @@ import NTUlogo from '@/image/NTUlogo.png'
 import { Center} from "@chakra-ui/react"
 const Header = () => {
     return (
-        // <Flex align-item = "center">
-            <Flex flexDir="column">
+            <Flex flexDir="column" gap="20px" >
                 <Center>
                     <Avatar width = "96px" height="96px" src={NTUlogo} />
                 </Center>
-                <div>
+                <div >
                     <Text align="center" fontSize="20px">
                         國立臺灣大學<br></br>
                         華語文及英文能力測驗
