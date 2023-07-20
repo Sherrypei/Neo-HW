@@ -1,4 +1,5 @@
-import {Card, CardBody, Stack, Text, Flex, CardHeader, CardFooter} from "@chakra-ui/react";
+import {Card, CardBody, Stack, Text, Flex, CardHeader, CardFooter, HStack} from "@chakra-ui/react";
+import {EmailIcon, PhoneIcon} from "@chakra-ui/icons";
 
 const SingleCard = ({info}) => {
     const {zhTitle, enTitle, zhName, enName, zhUnit, enUnit, email, phone} = info;
@@ -19,8 +20,15 @@ const SingleCard = ({info}) => {
                     <Text align={"right"} fontSize="16.8px" color="#808080">
                         {enUnit}
                     </Text>
-                    <Text fontSize="12px" color="#733236">{email}</Text>
-                    <Text fontSize="12px" color="#733236">{phone}</Text>
+                    <HStack color="#733236">
+                        <EmailIcon/>
+                        <Text fontSize="12px">{email}</Text>
+                    </HStack>
+                    <HStack color="#733236">
+                        <PhoneIcon/>
+                        <Text fontSize="12px">{phone}</Text>
+                    </HStack>
+
                 </CardBody>
 
             </Card>
