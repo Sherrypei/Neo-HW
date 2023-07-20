@@ -1,9 +1,14 @@
 import HomePage from "@/container/HomePage.jsx";
+import {Flex} from "@chakra-ui/react";
 
 
 const App =() =>{
     return(
-        <HomePage/>
+        <Flex py="120px" justifyContent="center">
+
+            <HomePage/>
+
+        </Flex>
     )
 }
 export default App;
