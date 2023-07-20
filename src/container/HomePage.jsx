@@ -1,4 +1,4 @@
-import {Flex} from "@chakra-ui/react";
+import {Flex, VStack} from "@chakra-ui/react";
 import Header from "@/components/Header.jsx";
 import InfoCard from "@/container/InfoCard.jsx";
 import Announcement from "@/container/Announcement.jsx";
@@ -12,14 +12,16 @@ import SingleAnnouncement from "@/components/SingleAnnouncement.jsx";
 
 const HomePage = () =>{
     return (
-        <Flex w="100vw" flexDir={"column"} alignItems="center">
+
+        <VStack spacing ="60px">
             <Header/>
             <Announcement/>
             <Note1/>
             <InfoCard/>
             <Note2/>
             <Footer/>
-        </Flex>
+        </VStack>
+
     )
 }
 

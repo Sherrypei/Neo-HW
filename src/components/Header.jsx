@@ -1,11 +1,13 @@
-import {Avatar, Flex, Text} from '@chakra-ui/react'
+import {Avatar, Flex, Text, Stack, VStack} from '@chakra-ui/react'
 import NTUlogo from '@/image/NTUlogo.png'
-
+import { Center} from "@chakra-ui/react"
 const Header = () => {
     return (
-        <Flex align = "center">
-            <div>
-                <Avatar width = '96px'  src={NTUlogo}/>
+        // <Flex align-item = "center">
+            <Flex flexDir="column">
+                <Center>
+                    <Avatar width = "96px" height="96px" src={NTUlogo} />
+                </Center>
                 <div>
                     <Text align="center" fontSize="20px">
                         國立臺灣大學<br></br>
@@ -17,8 +19,8 @@ const Header = () => {
                     </Text>
                 </div>
 
-            </div>
-        </Flex>
+            </Flex>
+        // </Flex>
     )
 }
 export default Header

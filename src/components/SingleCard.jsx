@@ -11,22 +11,18 @@ const SingleCard = ({info}) => {
                 {enTitle}
             </Text>
             <Card>
-                <CardHeader>
-                    <Text fontSize="18px">{zhName}</Text>
-
-                    <Text fontSize="14px">{enName}</Text>
-                </CardHeader>
                 <CardBody>
+                    <Text fontSize="18px">{zhName}</Text>
+                    <Text fontSize="14px">{enName}</Text>
                     <Text align={"right"} fontSize="16.8px" color="#808080">{zhUnit}
                         </Text>
                     <Text align={"right"} fontSize="16.8px" color="#808080">
                         {enUnit}
                     </Text>
-                </CardBody>
-                <CardFooter>
                     <Text fontSize="12px" color="#733236">{email}</Text>
                     <Text fontSize="12px" color="#733236">{phone}</Text>
-                </CardFooter>
+                </CardBody>
+
             </Card>
         </Stack>
 

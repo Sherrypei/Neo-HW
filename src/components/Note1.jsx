@@ -2,7 +2,7 @@ import {Text, Flex} from "@chakra-ui/react";
 
 const Note1 = () => {
     return (
-        <div>
+        <Flex flexDir="column" h="111px" justify="space-between">
             <div>
                 <Text align="center" fontSize="14px"><b>
                     考生如有疑問，請洽下列單位人員<br/>
@@ -17,7 +17,7 @@ const Note1 = () => {
                     Tap the cards below to send them email
                 </Text>
             </div>
-        </div>
+        </Flex>
 
     )
 }
