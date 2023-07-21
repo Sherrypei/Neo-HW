@@ -6,13 +6,13 @@ const SingleAnnouncement = ({info}) => {
     const [isMobile] = useMediaQuery("(max-width: 768px)");
 
     return (
-        <Flex  >
-                <Card w="100%">
-                    <CardBody>
-                        <Text align="center" fontSize="16px">{zhTitle}</Text>
-                        <Text align="center" fontSize="12px">{enTitle}</Text>
-                    </CardBody>
-                </Card>
+        <Flex>
+            <Card w="100%">
+                <CardBody>
+                    <Text align="center" fontSize="16px">{zhTitle}</Text>
+                    <Text align="center" fontSize="12px">{enTitle}</Text>
+                </CardBody>
+            </Card>
 
         </Flex>
 

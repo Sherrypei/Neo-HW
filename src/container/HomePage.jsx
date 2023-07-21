@@ -15,7 +15,7 @@ const HomePage = () =>{
 
     return (
 
-    <Flex gap ="60px" flexDir="column">
+    <Flex gap ="60px" flexDir="column" w="70%">
             <Header/>
             <Announcement/>
             <Note1/>

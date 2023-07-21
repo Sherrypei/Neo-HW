@@ -11,7 +11,6 @@ const SingleCard = ({info}) => {
             <Text align="center" fontSize="12px">
                 {enTitle}
             </Text>
-
             <Card>
                 <CardBody>
                     <Text fontSize="18px">{zhName}</Text>
