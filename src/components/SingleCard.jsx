@@ -5,17 +5,20 @@ const SingleCard = ({info}) => {
     const {zhTitle, enTitle, zhName, enName, zhUnit, enUnit, email, phone} = info;
     const [isMobile] = useMediaQuery("(max-width: 768px)");
     return (
-        <Stack w={isMobile ? "100%" : "35%"} spacing="20px">
-            <Text align="center" fontSize="14px">
-                {zhTitle}
-            </Text>
-            <Text align="center" fontSize="12px">
-                {enTitle}
-            </Text>
-            <Card>
+        <Stack w={isMobile ? "100%" : "40%"} spacing="20px">
+            <div>
+                <Text align="center" fontSize="14px">
+                    {zhTitle}
+                </Text>
+                <Text align="center" fontSize="12px">
+                    {enTitle}
+                </Text>
+            </div>
+
+            <Card shadow="lg">
                 <CardBody>
-                    <Text fontSize="18px">{zhName}</Text>
-                    <Text fontSize="14px">{enName}</Text>
+                    <Text fontSize="18px"><b>{zhName}</b></Text>
+                    <Text fontSize="14px"><b>{enName}</b></Text>
                     <Text align={"right"} fontSize="16.8px" color="#808080">{zhUnit}
                     </Text>
                     <Text align={"right"} fontSize="16.8px" color="#808080">

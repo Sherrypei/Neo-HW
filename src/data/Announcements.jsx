@@ -9,7 +9,7 @@ const announcements = [
 
     }
     , {
-        zhTitle: "英文免修/補考/編班公告",
+        zhTitle: "大一英文免修/補考/編班公告",
         enTitle: "Freshman English Waiving/Make-up/ Placement"
 
     }

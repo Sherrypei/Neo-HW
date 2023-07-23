@@ -7,8 +7,12 @@ const SingleAnnouncement = ({info}) => {
 
     return (
         <Flex>
-            <Card w="100%">
-                <CardBody>
+            <Card w="100%" shadow="lg" _hover={{
+                bg: 'gray.100',
+                boxShadow: 'inner',
+                transitionDuration: '0.5s',
+            }}>
+                <CardBody gap="0">
                     <Text align="center" fontSize="16px">{zhTitle}</Text>
                     <Text align="center" fontSize="12px">{enTitle}</Text>
                 </CardBody>
