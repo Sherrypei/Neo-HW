@@ -1,16 +1,14 @@
-import {Card, CardBody, Text, Flex, useMediaQuery} from "@chakra-ui/react";
-import announcement from "@/data/Announcements.jsx";
+import {Card, CardBody, Flex, Text} from "@chakra-ui/react";
 
 const SingleAnnouncement = ({info}) => {
     const {zhTitle, enTitle} = info;
-    const [isMobile] = useMediaQuery("(max-width: 768px)");
-
     return (
         <Flex>
             <Card w="100%" shadow="lg" _hover={{
                 bg: 'gray.100',
                 boxShadow: 'inner',
                 transitionDuration: '0.5s',
+                cursor: "pointer"
             }}>
                 <CardBody gap="0">
                     <Text align="center" fontSize="16px">{zhTitle}</Text>

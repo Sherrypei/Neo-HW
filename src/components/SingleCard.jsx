@@ -1,4 +1,4 @@
-import {Card, CardBody, Stack, Text, Flex, CardHeader, CardFooter, HStack, useMediaQuery} from "@chakra-ui/react";
+import {Card, CardBody, CardFooter, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import {EmailIcon, PhoneIcon} from "@chakra-ui/icons";
 
 const SingleCard = ({info}) => {
@@ -15,7 +15,9 @@ const SingleCard = ({info}) => {
                 </Text>
             </div>
 
-            <Card shadow="lg">
+            <Card shadow="lg" _hover={{
+                cursor: "pointer"
+            }}>
                 <CardBody>
                     <Text fontSize="18px"><b>{zhName}</b></Text>
                     <Text fontSize="14px"><b>{enName}</b></Text>
@@ -35,8 +37,6 @@ const SingleCard = ({info}) => {
                         <Text fontSize="12px">{phone}</Text>
                     </HStack>
                 </CardFooter>
-
-
             </Card>
         </Stack>
 
