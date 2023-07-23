@@ -1,10 +1,11 @@
-import {Card, CardBody, Stack, Text, Flex, CardHeader, CardFooter, HStack} from "@chakra-ui/react";
+import {Card, CardBody, Stack, Text, Flex, CardHeader, CardFooter, HStack, useMediaQuery} from "@chakra-ui/react";
 import {EmailIcon, PhoneIcon} from "@chakra-ui/icons";
 
 const SingleCard = ({info}) => {
     const {zhTitle, enTitle, zhName, enName, zhUnit, enUnit, email, phone} = info;
+    const [isMobile] = useMediaQuery("(max-width: 768px)");
     return (
-        <Stack w="35%" spacing="20px">
+        <Stack w={isMobile ? "100%" : "35%"} spacing="20px">
             <Text align="center" fontSize="14px">
                 {zhTitle}
             </Text>

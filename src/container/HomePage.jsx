@@ -15,7 +15,7 @@ const HomePage = () =>{
 
     return (
 
-    <Flex gap ="60px" flexDir="column" w="70%">
+    <Flex gap ="60px" flexDir="column" w={isMobile ? "100%" : "70%"}>
             <Header/>
             <Announcement/>
             <Note1/>
